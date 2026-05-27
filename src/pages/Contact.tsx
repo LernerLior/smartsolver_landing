@@ -4,7 +4,7 @@ import './Contact.css'
 type FormState = 'idle' | 'loading' | 'success' | 'error'
 
 const channels = [
-  { icon: '📧', label: 'E-mail', value: 'contato@smartsolver.com.br' },
+  { icon: '📧', label: 'E-mail', value: 'smartsolver@gmail.com' },
   { icon: '📍', label: 'Endereço', value: 'São Paulo, SP — Brasil' },
 ]
 
