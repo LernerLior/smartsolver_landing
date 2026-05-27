@@ -1,0 +1,217 @@
+/* ── Hero ───────────────────────────── */
+.about-hero {
+  position: relative;
+  padding: 140px 0 80px;
+  overflow: hidden;
+}
+
+.about-hero__orb {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(0, 102, 255, 0.15) 0%, transparent 70%);
+  top: 0;
+  right: 5%;
+  filter: blur(80px);
+  pointer-events: none;
+}
+
+.about-hero__inner {
+  position: relative;
+  z-index: 1;
+  max-width: 680px;
+}
+
+.about-hero__title {
+  font-size: clamp(36px, 5vw, 58px);
+  color: var(--text-primary);
+  margin-bottom: 0;
+}
+
+.about-hero__accent {
+  color: var(--accent-cyan);
+}
+
+.about-hero__desc {
+  font-size: 17px;
+  line-height: 1.75;
+  color: var(--text-secondary);
+  font-weight: 300;
+  max-width: 580px;
+}
+
+/* ── Mission ────────────────────────── */
+.mission-section {
+  padding: 60px 0 80px;
+}
+
+.mission-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.mission-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 40px 36px;
+  transition: var(--transition);
+}
+
+.mission-card--highlight {
+  border-color: rgba(0, 200, 255, 0.35);
+  background: linear-gradient(135deg, #071428, #0a1a38);
+  position: relative;
+  overflow: hidden;
+}
+
+.mission-card--highlight::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent-cyan), var(--accent-blue));
+}
+
+.mission-card:hover {
+  border-color: var(--border-hover);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+.mission-card__icon {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.mission-card__title {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.mission-card__text {
+  font-size: 15px;
+  line-height: 1.75;
+  color: var(--text-secondary);
+  font-weight: 300;
+}
+
+/* ── Values ─────────────────────────── */
+.values-section {
+  padding: 80px 0;
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.values-title {
+  font-size: clamp(28px, 3.5vw, 42px);
+  color: var(--text-primary);
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.value-item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.value-item__icon {
+  font-size: 28px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.value-item__title {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+.value-item__desc {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  font-weight: 300;
+}
+
+/* ── Team ───────────────────────────── */
+.team-section {
+  padding: 80px 0 100px;
+}
+
+.team-title {
+  font-size: clamp(28px, 3.5vw, 42px);
+  color: var(--text-primary);
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 560px;
+}
+
+.team-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 36px 24px;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.team-card:hover {
+  border-color: var(--border-hover);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
+}
+
+.team-card__avatar {
+  font-size: 48px;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.team-card__name {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.team-card__role {
+  font-size: 13px;
+  color: var(--accent-cyan);
+  font-weight: 500;
+}
+
+/* ── Responsive ─────────────────────── */
+@media (max-width: 1024px) {
+  .team-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .about-hero { padding: 120px 0 60px; }
+  .mission-grid { grid-template-columns: 1fr; }
+  .values-grid { grid-template-columns: 1fr; }
+  .team-grid { grid-template-columns: repeat(2, 1fr); max-width: 100%; }
+}
+
+@media (max-width: 480px) {
+  .team-grid { grid-template-columns: 1fr; max-width: 280px; margin: 0 auto; }
+}
