@@ -8,7 +8,7 @@ const features = [
     desc: 'Reunimos reclamações espalhadas pelo Reclame Aqui, redes sociais, e-mail e outros canais em um único painel organizado.',
   },
   {
-    icon: '🤖',
+    icon: '🧠',
     title: 'Análise com Inteligência Artificial',
     desc: 'Nossa IA lê, classifica e interpreta cada reclamação automaticamente, identificando o problema central e o melhor caminho de resposta.',
   },

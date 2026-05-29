@@ -6,7 +6,7 @@ const team = [
 ]
 
 const values = [
-  { icon: '🎯', title: 'Foco no cliente', desc: 'Cada decisão começa com o impacto que terá nos nossos clientes e nos usuários finais que eles atendem.' },
+  { icon: '👁️', title: 'Foco no cliente', desc: 'Cada decisão começa com o impacto que terá nos nossos clientes e nos usuários finais que eles atendem.' },
   { icon: '⚡', title: 'Agilidade', desc: 'Acreditamos na entrega rápida e iterativa, aprendendo continuamente para melhorar nosso produto.' },
   { icon: '🔒', title: 'Transparência', desc: 'Dados claros, comunicação aberta e honestidade em todas as nossas relações.' },
   { icon: '🌱', title: 'Crescimento', desc: 'Investimos no desenvolvimento da nossa equipe e dos negócios dos nossos clientes.' },
